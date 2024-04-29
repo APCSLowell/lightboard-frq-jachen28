@@ -18,6 +18,8 @@ for(int i = 0; i < numRows; i++){
   lights[i][j] = r < 0.4;
 
   }
+}
+  }
 
   /** Evaluates a light in row index row and column index col and returns a status
    *  as described in part (b).
