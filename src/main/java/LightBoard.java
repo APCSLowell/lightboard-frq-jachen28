@@ -28,16 +28,18 @@ for(int i = 0; i < numRows; i++){
   public boolean evaluateLight(int row, int col)
   {
    int sum = 0;
+    
     for(int r = 0; r < lights.length; r++)
       {
-        if(lights[r][col])
+        if(lights[r][col]){
           sum++;
+        }
       }
 
     if(lights[row][col] && sum % 2 == 0)
-return true;
-if(!lights[row][col] && sum % 3 == 0)
 return false;
+if(!lights[row][col] && sum % 3 == 0)
+return true;
 
 return lights[row][col];
    
